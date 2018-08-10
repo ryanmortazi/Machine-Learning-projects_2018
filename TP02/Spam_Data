@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<char_freq_CHAR [4] &le; 0.079<br/>entropy = 0.971<br/>samples = 1656<br/>value = [993, 663]<br/>class = Non-pourriel>, fillcolor="#e5813955"] ;
+1 [label=<word_freq_WORD [7] &le; 0.02<br/>entropy = 0.637<br/>samples = 963<br/>value = [808, 155]<br/>class = Non-pourriel>, fillcolor="#e58139ce"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<char_freq_CHAR [5] &le; 0.087<br/>entropy = 0.494<br/>samples = 898<br/>value = [801, 97]<br/>class = Non-pourriel>, fillcolor="#e58139e0"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.387<br/>samples = 845<br/>value = [781, 64]<br/>class = Non-pourriel>, fillcolor="#e58139ea"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.956<br/>samples = 53<br/>value = [20, 33]<br/>class = Pourriel>, fillcolor="#399de564"] ;
+2 -> 4 ;
+5 [label=<word_freq_WORD [5] &le; 0.465<br/>entropy = 0.493<br/>samples = 65<br/>value = [7, 58]<br/>class = Pourriel>, fillcolor="#399de5e0"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.811<br/>samples = 28<br/>value = [7, 21]<br/>class = Pourriel>, fillcolor="#399de5aa"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.0<br/>samples = 37<br/>value = [0, 37]<br/>class = Pourriel>, fillcolor="#399de5ff"] ;
+5 -> 7 ;
+8 [label=<char_freq_CHAR [5] &le; 0.007<br/>entropy = 0.837<br/>samples = 693<br/>value = [185, 508]<br/>class = Pourriel>, fillcolor="#399de5a2"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<capital_run_length_average &le; 2.737<br/>entropy = 0.999<br/>samples = 359<br/>value = [173, 186]<br/>class = Pourriel>, fillcolor="#399de512"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.882<br/>samples = 216<br/>value = [151, 65]<br/>class = Non-pourriel>, fillcolor="#e5813991"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.619<br/>samples = 143<br/>value = [22, 121]<br/>class = Pourriel>, fillcolor="#399de5d1"] ;
+9 -> 11 ;
+12 [label=<word_freq_WORD [21] &le; 0.455<br/>entropy = 0.223<br/>samples = 334<br/>value = [12, 322]<br/>class = Pourriel>, fillcolor="#399de5f5"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.768<br/>samples = 49<br/>value = [11, 38]<br/>class = Pourriel>, fillcolor="#399de5b5"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.034<br/>samples = 285<br/>value = [1, 284]<br/>class = Pourriel>, fillcolor="#399de5fe"] ;
+12 -> 14 ;
+}
